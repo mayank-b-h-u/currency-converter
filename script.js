@@ -3,7 +3,7 @@ const toCurrency = document.getElementById("toCurrency");
 const result = document.getElementById("result");
 const amount = document.getElementById("amount");
 const dateofrate = document.getElementById("dateofrate");
-const API_KEY = "e95f39d75d7839e1bf654032";
+const API_KEY = "Enter The API_kay";
 let country = {};
 
 ///country code
