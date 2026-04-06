@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Currency Converter 💱</h1>
+        <h4 id="dateofrate"></h4>
+
+        <div class="input-group">
+            <label>Amount:</label>
+            <input type="number" id="amount" min="1" ="Enter amount">
+        </div>
+        <div class="selected">
+            <div class="input-group">
+                <label>From:</label>
+                <select id="fromCurrency">
+                    <option value="USD" >USD</option>
+                </select>
+            </div>
+            <img id="flagimg1" src="https://flagsapi.com/US/flat/64.png" alt="img">
+        </div>
+        <div class="selected">
+            <div class="input-group">
+                <label>To:</label> <br>
+                <select id="toCurrency">
+                    
+                </select>
+            </div>
+            <img id="flagimg2" src="https://flagsapi.com/IN/flat/64.png" alt="img">
+        </div>
+        <button onclick="convertCurrency()">Convert</button>
+
+        <h2 id="result" class="result">Result: </h2>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

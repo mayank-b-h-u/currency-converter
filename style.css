@@ -1,0 +1,149 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  background-color: #212121;
+  line-height: 1.6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+/* Container */
+.container {
+  width: 90%;              /* Desktop/Tablets ke liye */
+    max-width: 400px;        /* Zyada bada na ho jaye */
+    margin: 60px auto;       
+    padding: 25px;
+    background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    transition: all 0.3s ease;
+}
+
+/* Heading */
+h1 {
+  margin-bottom: 24px;
+  font-size: 1.5rem;
+  color: #333;
+  font-weight: 700;
+}
+
+/* Input group */
+.input-group {
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+/* Inputs & Selects */
+input, 
+select {
+  width: 100%;
+  padding: 12px 15px;
+  margin-top: 8px;
+  font-size: 16px; /* Prevents iOS zoom on focus */
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #fff;
+  transition: border-color 0.3s ease;
+  appearance: none; /* Modern look for selects */
+}
+
+input:focus, 
+select:focus {
+  outline: none;
+  border-color: #007BFF;
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.1);
+}
+
+/* Button */
+button {
+  width: 100%;
+  padding: 14px;
+  margin-top: 10px;
+  background-color: #007BFF;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  transition: background-color 0.2s ease, transform 0.1s active;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+button:active {
+  transform: scale(0.98);
+}
+
+/* Result Area */
+.result {
+  margin-top: 25px;
+  padding: 15px;
+  color: #b300cc;
+  font-weight: 700;
+  font-size: 1.1rem;
+  background: rgba(255, 255, 255, 0.4);
+  border-radius: 8px;
+}
+
+/* Flex Layout for selections */
+.selected {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+/* Image handling */
+img {
+  max-width: 50px;
+  height: auto;
+  display: block;
+  margin: 15px auto 0;
+}
+
+/* Responsive adjustments for extra small devices */
+@media (max-width: 480px) {
+    body {
+        padding: 0;
+        margin: 0;
+        display: flex;
+        align-items: center; /* Vertical center mobile par */
+        justify-content: center;
+        min-height: 100vh;
+    }
+
+    .container {
+        width: 100%;         /* Mobile par poori width */
+        max-width: 100%;     /* Mobile par koi limit nahi */
+        height: 100vh;       /* Poori height cover karne ke liye */
+        margin: 0;           /* Side margins hatane ke liye */
+        border-radius: 0;    /* Full screen par corners round ache nahi lagte */
+        display: flex;
+        flex-direction: column;
+        justify-content: center; /* Content ko beech mein lane ke liye */
+        padding: 30px;
+    }
+
+    h1 {
+        font-size: 28px;     /* Mobile par heading thodi badi */
+    }
+
+    input, select, button {
+        font-size: 18px;     /* Touch karne mein aasani ho */
+        padding: 15px;       /* Bade buttons mobile ke liye */
+    }
+}
